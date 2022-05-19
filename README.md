@@ -1,0 +1,5 @@
+
+
+'''   
+mvn -Pnative -DskipTests package   
+'''
