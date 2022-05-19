@@ -9,6 +9,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Data
 @ToString
 @Builder
+@NoArgsConstructor
 @AllArgsConstructor
 @Document(value = "boards")
 public class Boards {
@@ -16,5 +17,7 @@ public class Boards {
     private ObjectId id;
     private String title;
     private String content;
+
+
 
 }

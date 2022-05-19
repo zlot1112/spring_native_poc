@@ -1,4 +1,4 @@
-package com.fss.board.repository;
+package com.fss.board.config;
 
 import com.mongodb.reactivestreams.client.MongoClient;
 import com.mongodb.reactivestreams.client.MongoClients;
@@ -8,7 +8,7 @@ import org.springframework.data.mongodb.config.AbstractReactiveMongoConfiguratio
 import org.springframework.data.mongodb.repository.config.EnableReactiveMongoRepositories;
 
 @Configuration
-@EnableReactiveMongoRepositories(basePackageClasses = MongoConfig.class)
+@EnableReactiveMongoRepositories(basePackages = "com.fss.board.repository")
 public class MongoConfig extends AbstractReactiveMongoConfiguration {
     @Value("${mongo.uri}")
     String mongoUri;
