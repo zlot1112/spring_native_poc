@@ -3,9 +3,11 @@ package com.fss.board.controller;
 import com.fss.board.entity.Boards;
 import com.fss.board.repository.BoardsRepository;
 import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Mono;
 
+@Slf4j
 @RestController
 @RequestMapping("board")
 @AllArgsConstructor
